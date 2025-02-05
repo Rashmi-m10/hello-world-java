@@ -5,12 +5,12 @@ pipeline {
         
         stage('Build') {
             steps {
-               bat 'javac MyCalculatorTest.java'
+               bat 'javac src/test/java/com/helloworld/MyCalculatorTest.java'
             }
         }
         stage('Run') {
             steps {
-               bat 'java MyCalculatorTest'
+               bat 'java src/test/java/com/helloworld/MyCalculatorTest'
             }
         }
     }
